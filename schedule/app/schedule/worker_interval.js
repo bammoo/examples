@@ -4,7 +4,7 @@ const Subscription = require('egg').Subscription;
 
 class WorkerInterval extends Subscription {
   async subscribe() {
-    this.ctx.logger.info('all&&interval');
+    this.ctx.logger.info('worker&&interval');
   }
 
   static get schedule() {
